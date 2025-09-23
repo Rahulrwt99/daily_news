@@ -1,0 +1,79 @@
+name: daily_news
+description: "A professional news app like DailyNews/InShorts"
+
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.7.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+# State Management
+
+  flutter_bloc: ^9.1.1
+  equatable: ^2.0.7
+
+  # Routing
+  go_router: ^16.2.2
+
+  # HTTP & API
+  dio: ^5.9.0
+  retrofit: ^4.7.2
+  json_annotation: ^4.9.0
+
+  # Local Storage
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  shared_preferences: ^2.5.3
+
+
+  # UI Components
+  cached_network_image: ^3.4.1
+  carousel_slider: ^5.1.1
+  shimmer: ^3.0.0
+  flutter_staggered_animations: ^1.1.1
+
+  # Utilities
+  intl: ^0.20.2
+  share_plus: ^12.0.0
+  url_launcher: ^6.3.2
+  connectivity_plus: ^7.0.0
+
+  # Icons & Fonts
+  google_fonts: ^6.3.1
+
+# Code Generation
+
+  cupertino_icons: ^1.0.8
+  build_runner: ^2.8.0
+  retrofit_generator: ^10.0.5
+  flutter_lints: ^6.0.0
+
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: fonts/Poppins-Regular.ttf
+        - asset: fonts/Poppins-Medium.ttf
+          weight: 500
+        - asset: fonts/Poppins-SemiBold.ttf
+          weight: 600
+        - asset: fonts/Poppins-Bold.ttf
+          weight: 700
+  # see https://flutter.dev/to/font-from-package
